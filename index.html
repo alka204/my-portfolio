@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Alka Kumari</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="logo">Alka Kumari</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="files/updated_Resume.pdf" class="resume-btn" download>Resume</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Alka Kumari</span></h1>
+        <h2>
+          I’m a Web Developer passionate about building modern and user-friendly
+          websites.
+        </h2>
+        <p>
+          Let’s turn ideas into reality through clean design and efficient code.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Alka Kumari" />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <p class="intro">The technologies and tools I work with:</p>
+
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 / Bootstrap</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Canva</li>
+            <li>VS Code</li>
+            <li>Netlify / Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="images/sharemyride.jpg" alt="ShareMyRide Project" />
+          <h3>Ride-Connect</h3>
+          <p>
+            A carpooling web app using React and Firebase, enabling users to
+            share rides efficiently.
+          </p>
+          <a
+            href="https://github.com/alka204/Ride-Connect-"
+            target="_blank"
+            class="btn"
+            >View on GitHub</a
+          >
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="images/healthub.jpg" alt="Healthub Project" />
+          <h3>Healthub</h3>
+          <p>
+            A responsive health tracking website built using HTML, CSS, and
+            JavaScript.
+          </p>
+          <a href="https://github.com/alka/healthub" target="_blank" class="btn"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Let’s connect and collaborate on something amazing!</p>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://github.com/alka204" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/alka-kumari-7a0133267/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="mailto:alka.kumari3289@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built with ❤️ and passion for web development.</p>
+    </footer>
+
+    <!-- Vanta.js Animated Background Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0xffffff,
+        backgroundColor: 0x0b0d17,
+         points: 10.0,
+         maxDistance: 20.0,
+         spacing: 18.0
+
+      });
+    </script>
+  </body>
+</html>
